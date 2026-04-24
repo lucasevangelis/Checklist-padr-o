@@ -17,5 +17,4 @@ st.markdown("""
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📲 App de Celular")
 st.sidebar.info("Para coletar dados em locais sem internet, utilize o nosso **Aplicativo Offline**.")
-if st.sidebar.button("Acessar App Offline"):
-    st.info("Para usar no celular, abra o link do seu GitHub Pages (Ex: lucasevangelis.github.io/Checklist-padr-o/coleta_offline/)")
+st.sidebar.link_button("Abrir App Offline", "https://lucasevangelis.github.io/Checklist-padr-o/coleta_offline/")
