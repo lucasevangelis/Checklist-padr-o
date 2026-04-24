@@ -267,6 +267,12 @@ with st.form("form_checklist", clear_on_submit=True):
                 st.session_state.checklist_preview.append(novo_registro)
                 st.success("Adicionado à prévia com sucesso!")
 
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📴 Sem Internet no Celular?")
+st.sidebar.warning("Use o nosso **App Offline** para coletar dados em campo sem sinal.")
+if st.sidebar.button("Acessar Coleta Offline"):
+    st.info("Acesse pelo celular: lucasevangelis.github.io/Checklist-padr-o/coleta_offline/")
+
 # Exibir a prévia
 st.markdown("---")
 st.subheader("👀 Pré-visualização dos Dados")
