@@ -6,9 +6,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# Banco de Dados (NÃO subir os dados de vistoria)
-*.csv
-Checklist dos pisos(Planilha1).csv
+# Banco de Dados
+# O CSV foi liberado para subir para o GitHub para que o Render/Streamlit Cloud consiga acessá-lo na inicialização.
 
 # Cache do Python
 __pycache__/
