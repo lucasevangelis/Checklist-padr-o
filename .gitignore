@@ -1,0 +1,20 @@
+# Ambiente Virtual Python
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Banco de Dados (NÃO subir os dados de vistoria)
+*.csv
+Checklist dos pisos(Planilha1).csv
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
