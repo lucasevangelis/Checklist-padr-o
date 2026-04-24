@@ -14,7 +14,7 @@ if "auth_checklist" not in st.session_state:
 
 if not st.session_state.auth_checklist:
     st.title("🔒 Acesso Restrito - Registro Checklist")
-    senha_correta = os.getenv("SENHA_CHECKLIST", "Callink@02")
+    senha_correta = os.getenv("SENHA_CHECKLIST") # Lê da nuvem ou arquivo local
     senha = st.text_input("Digite a senha de acesso ao Registro:", type="password")
     if st.button("Entrar", type="primary"):
         if senha == senha_correta:
