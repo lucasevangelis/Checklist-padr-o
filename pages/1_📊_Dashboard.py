@@ -13,9 +13,10 @@ if "auth_dashboard" not in st.session_state:
 
 if not st.session_state.auth_dashboard:
     st.title("🔒 Acesso Restrito - Dashboard")
+    senha_correta = os.getenv("SENHA_DASHBOARD", "Callink@01")
     senha = st.text_input("Digite a senha de acesso ao Dashboard:", type="password")
     if st.button("Entrar", type="primary"):
-        if senha == "Callink@01":
+        if senha == senha_correta:
             st.session_state.auth_dashboard = True
             st.rerun()
         else:
